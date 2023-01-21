@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="main.css">
+	<script src="/code/userEvents/scissorsEvent.js" defer></script>
+	<script src="/code/userEvents/rockEvent.js" defer></script>
+	<script src="/code/userEvents/paperEvent.js" defer></script>
+	<script src="game.js" defer></script>
+	<title>Rock Paper Scissors</title>
+</head>
+<body>
+	<button type="reset" id="playAgain">Play again</button>
+	<p id="endGameMessage"></p>
+	<p id="roundInfo"></p>
+	<div id="scoreTable">
+		<p id="userScore">0</p>
+		<p>:</p>
+		<p id="botScore">0</p>
+	</div>
+	<div id="botChoice">
+		<img src="/photos/paper.png" id="botPaper" class="botPhotos" alt="paper">
+        <img src="/photos/rock.png" id="botRock" class="botPhotos" alt="rock">
+        <img src="/photos/scissors.png" id="botScissors" class="botPhotos" alt="scissors">
+		<div id="botCardBack1" class="botCardBack" alt="cardBack"></div>
+		<div id="botCardBack2" class="botCardBack" alt="cardBack"></div>
+		<div id="botCardBack3" class="botCardBack" alt="cardBack"></div>
+	</div>
+	<div id="playerChoice">
+        <img src="/photos/paper.png" id="userPaper" class="userPhotos" alt="paper">
+        <img src="/photos/rock.png" id="userRock" class="userPhotos" alt="rock">
+        <img src="/photos/scissors.png" id="userScissors" class="userPhotos" alt="scissors">
+	</div>
+</body>
+</html>

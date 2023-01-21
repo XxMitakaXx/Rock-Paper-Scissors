@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#endGameMessage {
+	font-size: 50px;
+	padding-bottom: 100px;
+}
+
+#roundInfo {
+	font-size: 25px;
+	position: absolute;
+	top: 320px;
+	left: 90px;
+}
+
+#playAgain {
+	width: 300px;
+	height: 80px;
+	font-size: 30px;
+	color: white;
+	background-color: #FF0266;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.178);
+    position: absolute;
+	right: 100px;
+	cursor: pointer;
+}
+
+#scoreTable {
+    width: 300px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: #FF0266;
+	position: absolute;
+	left: 50px;
+	border-radius: 10px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.178);
+	font-size: 50px;
+}
+
+#scoreTable p {
+    margin: 20px;
+}
+
+#botChoice {
+	width: 800px;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(180deg);
+}
+
+.botPhotos {
+	width: 180px;
+	height: 300px;
+	margin: 40px 40px 10px 40px;
+	border-radius: 10px;
+	box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.164);
+	transition: 0.3s;
+	z-index: 0;
+	transform: rotateY(180deg);
+    transition: 0.3;
+}
+
+.botCardBack {
+    width: 180px;
+	height: 300px;
+	margin: 40px 40px 10px 40px;
+	border-radius: 10px;	
+	position: absolute;
+	z-index: 1;
+	transform: rotateY(180deg);
+	transition: 0.3s;
+	background-color: #FF0266;
+}
+
+#botCardBack1 {
+	right: 10px;
+}
+
+#botCardBack3 {
+    left: 10px;
+}
+
+#playerChoice {
+	position: absolute;
+	bottom: 0;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.userPhotos {
+	margin: 40px 40px 10px 40px;
+	border-radius: 10px;
+	box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.164);
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.userPhotos:hover {
+	transform: translateY(-30px);
+	box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.164);
+}
